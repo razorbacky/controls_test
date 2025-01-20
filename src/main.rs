@@ -17,7 +17,7 @@ fn main() {
 
         // temperture_f를 float로 바꾸기
         // 잘못된 입력 오류 처리
-        let _temperture_f: f64 = match temperture_f.trim().parse() {
+        let _temperture_f: f32 = match temperture_f.trim().parse() {
             Ok(c_float) => c_float,
             Err(_) => {
                 // 오류 발생 시 출력
